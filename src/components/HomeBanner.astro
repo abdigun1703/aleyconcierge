@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets';
+---
+<style>
+  .full-width-image {
+    width: 100%;
+  }
+</style>
+
+<section class="home section" id="home">
+            <Image 
+				width={720} 
+				height={360} 
+				src="/src/assets/img/home-bg.png" 
+				alt="Placeholder" 
+				class="full-width-image home__bg" 
+			/>
+            <div class="home__blur"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <!-- <h1 class="home__title">Travel <br> Around <br> The World</h1> -->
+                  <h1 class="home__title">Travel with<br>Aley Concierge</h1>
+
+                  <!-- <p class="home__description">Explore the best beautiful tourist spots in 
+                  the countries and see the world on all your 
+                  amazing adventures.
+                  </p> -->
+                  <p class="home__description">
+                     You know what happiness is?<br> Happiness is traveling with Aley Concierge around Indonesia
+                  </p>
+
+                  <a href="#destination" class="button button__opa-30">
+                     Join Us
+                     <i class="ri-arrow-right-long-line"></i>
+                  </a>
+               </div>
+
+			   <div class="home__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-1.png" alt="image" class="home__image" />
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-2.png" alt="image" class="home__image" />
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-3.png" alt="image" class="home__image" />
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-4.png" alt="image" class="home__image" />
+                     </article>
+                     
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-2.png" alt="image" class="home__image" />
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="assets/img/home-img-4.png" alt="image" class="home__image" />
+                     </article>
+                  </div>
+
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-long-line"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-long-line"></i>
+                  </div>
+               </div>
+            </div>
+         </section>

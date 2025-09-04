@@ -55,3 +55,12 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="/src/styles/swiper-bundle.min.css">

@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import "../styles/global.css";
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+
+	<body>
+		<Header />
+		<main class="main">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+
+	<script>
+		import "../scripts/scrollreveal.js";
+		import'../scripts/removeheader.js';
+		import'../scripts/homeswiper.js';
+		import'../scripts/scrollup.js';
+	</script>
+
+	<script>
+
+
+    </script>
+</html>
