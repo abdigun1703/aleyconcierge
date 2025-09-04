@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import placeholderImage from '../assets/img/home-bg.png';
 ---
 <style>
   .full-width-image {
@@ -9,6 +10,14 @@ import { Image } from 'astro:assets';
 
 <section class="home section" id="home">
             <img src="assets/img/home-bg.png" alt="image" class="full-width-image home__bg" />
+
+            <Image 
+               width={300}
+               height={400}
+               src={placeholderImage} 
+               alt="Placeholder" 
+               class="full-width-image home__bg"
+            />
             <div class="home__blur"></div>
 
             <div class="home__container container grid">
